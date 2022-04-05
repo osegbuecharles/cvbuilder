@@ -1,0 +1,23 @@
+.footer-body{
+    background: linear-gradient(to top right,rgb(230, 215, 11), rgb(199, 147, 6));
+    color:black;
+    height:24vh;
+    text-align: left;
+    padding:20px;
+}
+
+.footer-body a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer-body a:hover{
+    color:rgb(48, 47, 47);
+    text-decoration: underline;
+}
+
+#built{
+    position:fixed;
+    bottom:0;    
+    right:0;
+}

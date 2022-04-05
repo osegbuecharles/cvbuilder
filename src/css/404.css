@@ -1,0 +1,19 @@
+.a404-page{    
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+   
+}
+
+.a404-page>img{
+    max-width: 100%;    
+    margin-top: -100px;    
+}
+
+.go-home{
+    position: absolute;
+    bottom:50px;    
+    margin-left: -10%;
+}

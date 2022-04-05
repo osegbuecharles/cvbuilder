@@ -1,0 +1,352 @@
+.Page{
+    background: linear-gradient(to top right, rgb(220, 190, 20),rgb(53, 45, 3));
+    height:100vh; 
+    overflow-y: scroll;   
+    color:white;    
+}
+
+.Page h3{
+    color:white;
+    font-family: font1;    
+}
+
+.Page>.Login{
+    margin-top:1vh;
+    margin-left:10%;
+    padding-bottom:10px;
+    width:80%;
+    background: linear-gradient(
+        to bottom right, 
+        rgba(0,0,0,0.7), 
+        rgba(0,0,0,0.3)
+    ) ;
+    border-radius: 9px;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    color:white;
+    display: flex;
+    flex-direction: column;     
+}
+
+.Page>.Login>.box{
+    width:100%;  
+    padding: 0 0;    
+    display: flex;
+    align-self: center;
+}
+
+.Page>.Login .form-container{
+    flex:1;   
+      
+    padding-top: 20px;    
+    background: linear-gradient(
+        to bottom right, 
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0.3)
+    ) ;
+    border-radius: 5px;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    
+    color:white;
+}
+
+#loginForm>div input, #signupForm>div input{
+    background: linear-gradient(
+        to bottom right, 
+        rgba(219, 188, 9, 0.4),
+        rgba(224, 185, 8, 0.3)
+    ) ;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    color:white;
+    backdrop-filter: blur(3rem);
+    height:7vh;
+}
+
+#loginForm>div textarea{
+    background: linear-gradient(
+        to bottom right, 
+        rgba(219, 188, 9, 0.4),
+        rgba(224, 185, 8, 0.3)
+    ) ;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    color:white;
+    backdrop-filter: blur(3rem);
+    
+}
+
+#loginForm>div input::placeholder, #signupForm>div input::placeholder, #loginForm>div textarea::placeholder{
+    color:white;
+    font-size:larger;
+}
+
+#loginForm>div input:focus, #signupForm>div input:focus, #loginForm>div textarea:focus{
+    background: linear-gradient(
+        to bottom right, 
+        rgba(238, 203, 7, 0.4),
+        rgba(230, 196, 5, 0.3)
+    ) ;
+    color:white;
+    border-top:none;
+    border-left: none;
+    border-right: none;    
+}
+
+.btn-primary{    
+    background-color: rgb(238, 204, 14);    
+    border-color: gold;
+    color:black;
+}
+
+
+.btn-primary:focus{
+    background-color: rgb(233, 199, 7);    
+    border-color: gold;
+    color:black;
+}
+
+.btn-primary:hover{
+    background-color: rgb(212, 182, 12);    
+    border-color: gold;
+    color:black;
+}
+
+
+.mobile-only{
+    display:none;
+}
+
+@media screen and (max-width:1000px) {
+    .desktop-only{
+        display:none;
+    }
+    .mobile-only{
+        display: block;
+    }
+}
+
+
+/*ACCOUNT SETION*/
+.Page>.Account{
+    width:96%;
+    height:96vh;
+    background: white;
+    margin-left:2%;
+    margin-top:2vh;
+    backdrop-filter: blur;
+    color:black;
+    text-align: left;
+}   
+
+.Page>.Account .section{
+    color:black;
+}
+
+.Page>.Account .content{
+    box-shadow: 1px 1px 3px #d6d6d6, -1px -1px 3px #e0dfdf ;
+}
+
+.toggle,.newItem{
+    float:right;
+}
+
+#template1{
+    
+}
+
+.template{
+    height:30vh;
+    width:40vh;
+    border:solid thin black;
+    cursor:pointer;    
+    
+}
+
+.set{
+   margin-top: 20%;
+   margin-left: 30%;
+}
+
+.template:hover{
+    border:solid thin rgb(224, 192, 6);
+    box-shadow: 1px 1px 3px #dfc905, -1px -1px 3px #dfc905;
+}
+/* width */
+.Page>.Account::-webkit-scrollbar {
+    width: 5px;
+    background-color:rgb(221, 207, 10);
+}
+     
+/* Track */
+.Page>.Account::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 10px;
+}
+      
+/* Handle */
+.Page>.Account::-webkit-scrollbar-thumb {
+    background: rgb(226, 194, 8);
+    border-radius: 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #e9c80c;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #eed706;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.scrollable{
+    overflow-y: scroll;
+}
+
+/* width */
+.scrollable::-webkit-scrollbar {
+    width: 5px;
+    background-color:rgb(228, 206, 10);
+}
+     
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 10px;
+}
+      
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+    background: rgb(226, 193, 8);
+    border-radius: 10px;
+}
+
+.pagination{
+    overflow-x: scroll;
+}
+
+/* width */
+.pagination::-webkit-scrollbar {
+    width: 1px;
+    height:2px;
+    background-color:rgb(212, 175, 9);
+}
+     
+/* Track */
+.pagination::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px white;
+    border-radius: 1px;
+}
+      
+/* Handle */
+.pagination::-webkit-scrollbar-thumb {
+    background: rgb(196, 167, 6);
+    border-radius: 1px;
+}
+
+.table-primary{
+    border-color:rgb(199, 170, 8);
+    
+}
+
+
+.table-primary>tbody>tr>td{
+    background-color: rgb(231, 79, 231);
+}
+
+
+.table-primary>thead>th{
+    background-color: rgb(94, 8, 94);    
+    color:white;
+    font-size: larger;
+}
+
+#customize-input{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom:solid thin purple;
+}
+
+#customize-input:focus{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom:solid thin purple;
+}
+
+
+/* width */
+.Page::-webkit-scrollbar {
+    width: 5px;
+    background-color:rgb(248, 211, 2);
+}
+     
+/* Track */
+.Page::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 10px;
+}
+      
+/* Handle */
+.Page::-webkit-scrollbar-thumb {
+    background: rgb(206, 176, 6);
+    border-radius: 10px;
+}

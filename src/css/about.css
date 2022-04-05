@@ -1,0 +1,26 @@
+.body{
+    height:76vh;
+    background: linear-gradient(to bottom right, rgb(230, 215, 11),rgb(199, 147, 6));
+    
+}
+
+h3{
+    color:black;
+    font-family: font1;
+}
+
+p{
+    text-align: left;
+    color:black;    
+}
+
+p a{
+    color:black;
+    text-decoration: none;
+}
+
+
+p a:hover{
+    color:black;
+    text-decoration: underline;
+}
