@@ -6,10 +6,10 @@ function Footer(props) {
     <div className="footer-body">
          <div >
             <h4>Useful Links</h4>
-            <a href="/">Home</a><br/>
-            <a href="./about-us">About Us</a><br/>
-            <a href="./login">Login</a><br/>
-            <a href="./register">Register</a><br/>
+            <a href={props.base}>Home</a><br/>
+            <a href={props.base+"/about-us"}>About Us</a><br/>
+            <a href={props.base+"/login"}>Login</a><br/>
+            <a href={props.base+"/register"}>Register</a><br/>
         </div>
 
            

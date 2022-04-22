@@ -130,7 +130,7 @@ function Home(props) {
      </div>
 
    </div>
-   <Footer />
+   <Footer base={props.base}/>
   </>
   );
  
